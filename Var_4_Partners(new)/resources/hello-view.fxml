@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox fx:id="root" alignment="TOP_CENTER" prefHeight="711.0" prefWidth="533.0" spacing="20.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demoexamnewfour.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+
+    <ImageView fx:id="icon" fitHeight="100" fitWidth="100" />
+
+    <!-- ScrollPane для прокрутки -->
+    <ScrollPane fx:id="scrollPane" fitToWidth="true" prefHeight="600.0" prefWidth="500.0">
+
+        <!-- Контейнер, в который будут добавляться динамические HBox -->
+        <VBox fx:id="contentBox" alignment="TOP_CENTER" spacing="10.0" />
+
+
+    </ScrollPane>
+    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+        <children>
+            <Button alignment="CENTER" contentDisplay="BOTTOM" onAction="#updateListPartners" prefHeight="26.0" prefWidth="150.0" text="Обновить">
+                <HBox.margin>
+                    <Insets left="50.0" right="50.0" />
+                </HBox.margin>
+            </Button>
+
+            <Button alignment="CENTER" contentDisplay="BOTTOM" onAction="#addNewPartner"  prefHeight="23.0" prefWidth="150.0" text="Добавить">
+                <HBox.margin>
+                    <Insets left="50.0" right="50.0" />
+                </HBox.margin>
+            </Button>
+            <Button alignment="CENTER" contentDisplay="BOTTOM" onAction="#deletePartner"  prefHeight="26.0" prefWidth="150.0" text="Удалить">
+                <HBox.margin>
+                    <Insets left="50.0" right="50.0" />
+                </HBox.margin>
+            </Button>
+        </children>
+    </HBox>
+</VBox>

@@ -10,6 +10,6 @@ ___________________________________________________
 
 через IDEA но нужно будет добавить доп параметры запуска HelloApplicaton а именно
 
-```  --module-path /home/username/openjfx-23.0.1_linux-x64_bin-sdk/javafx-sdk-23.0.1/lib --add-modules  javafx.controls,javafx.fxml ```
+```  --module-path /usr/lib/jvm/openjfx/lib --add-modules  javafx.controls,javafx.fxml ```
 
 в IDE по другому никак не запустить fx приложение (нужно указывать параметры VM)
